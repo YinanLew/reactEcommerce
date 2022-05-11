@@ -5,6 +5,7 @@ import useStyles from './styles'
 import Validation from "./validation/Validation";
 import Email from "./email/Email";
 import Reset from './reset/Reset';
+import Footer from "../../home/footer/Footer";
 
 const Forgot = () => {
     const steps = ['Forgot Page', 'Validation Page'];
@@ -35,6 +36,7 @@ const Forgot = () => {
 
 
     return (
+        <div className={classes.container}>
         <Grid container align={"center"}>
             <Grid item xs={12} className={classes.box}>
                 <FormProvider >
@@ -57,6 +59,10 @@ const Forgot = () => {
                 </FormProvider>
             </Grid>
         </Grid>
+        <div className={classes.footer}>
+            <Footer />
+        </div>
+        </div>
     );
 }
 

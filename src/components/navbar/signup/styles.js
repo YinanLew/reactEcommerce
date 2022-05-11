@@ -7,5 +7,8 @@ export default makeStyles((theme) => ({
     },
     title: {
         fontFamily: 'Montserrat, cursive, Arial '
+    },
+    footer: {
+        marginTop: '100px'
     }
 }));

@@ -18,7 +18,7 @@ const Cards = ({data, arr, category}) => {
 
 
     return (
-            <Card className={classes.root} >
+            <Card className={classes.root} square={true} >
                 <NavLink style={{textDecoration: 'none'}}  to={"/search"} onClick={() => category(data.title)}>
                 <CardMedia
                     className={classes.media}
@@ -36,7 +36,7 @@ const Cards = ({data, arr, category}) => {
                 </div>
                 <CardActions disableSpacing className={classes.cardActions}>
                 <NavLink style={{textDecoration: 'none'}}  to={"/search"}>
-                    <Button  size="small" color={"secondary"} onClick={() => category(data.title)}>Shop Now</Button>
+                    {/*<Button  size="small" color={"secondary"} onClick={() => category(data.title)}>Shop Now</Button>*/}
                 </NavLink>
                 </CardActions>
             </Card>

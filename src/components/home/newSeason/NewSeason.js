@@ -29,11 +29,11 @@ const NewSeason = () => {
 
 
         if (window.innerWidth > 700 ) {
-            gsap.to(boxOneRef, {scrollTrigger: { trigger: boxOneRef, start: 'top 50%', toggleActions: 'play none none reset' },
+            gsap.to(boxOneRef, {scrollTrigger: { trigger: boxOneRef, start: 'top 50%', toggleActions: 'play none none pause' },
                 opacity: 1, duration: 1.5, x: 60
                 })
 
-            gsap.to(boxTwoRef, {scrollTrigger: { trigger: boxTwoRef, start: 'top 50%', toggleActions: 'play none none reset' },
+            gsap.to(boxTwoRef, {scrollTrigger: { trigger: boxTwoRef, start: 'top 55%', toggleActions: 'play none none pause' },
                 opacity: 1, duration: 1.5, delay: 0.3, x: -150
             })
         }
@@ -52,12 +52,12 @@ const NewSeason = () => {
                 {/*    NewSeason*/}
                 {/*</Typography>*/}
                 <Grid container>
-                    <Grid item xs={12} sm={12} md={12} lg={6}>
+                    <Grid item xs={12} sm={12} md={12} lg={8}>
                         <Box className={classes.box} ref={boxOne}>
                             <FlippedBook />
                         </Box>
                     </Grid>
-                    <Grid item xs={12} sm={12} md={12} lg={6} className={classes.box2Flex}>
+                    <Grid item xs={12} sm={12} md={12} lg={4} className={classes.box2Flex}>
                         <Box className={classes.box2} ref={boxTwo} >
                             <div className={classes.videoContainer}>
                             <span style={{fontFamily: 'Montserrat, sans-serif', fontSize: '150%', fontWeight: '500'}}>New Season</span>

@@ -4,6 +4,7 @@ import CardItems from './cartItems/CartItems';
 import {Link} from'react-router-dom';
 
 import useStyles from './styles';
+import Footer from "../home/footer/Footer";
 
 
 const Cart = ({product, addItems, deItems, removeFromCart, emptyCart}) => {
@@ -65,11 +66,15 @@ const Cart = ({product, addItems, deItems, removeFromCart, emptyCart}) => {
 
 
         return (
-            <Container>
+            <div>
+            <Container  className={classes.container}>
                 <div className={classes.toolbar}/>
                 <Typography className={classes.title} variant={"h3"} gutterBottom>Shopping Cart</Typography>
                 { isEmpty ?  <EmptyCart/> : <FilledCart/> }
             </Container>
+                <Footer />
+            </div>
+
         );
 }
 

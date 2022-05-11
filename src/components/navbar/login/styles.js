@@ -7,5 +7,14 @@ export default makeStyles((theme) => ({
     },
     title: {
         fontFamily: 'Montserrat, cursive, Arial '
+    },
+    container: {
+        display: 'flex',
+        height: '100vh',
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+    },
+    footer: {
+        marginTop: '200px'
     }
 }));

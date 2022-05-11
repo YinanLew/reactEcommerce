@@ -11,6 +11,7 @@ import FormLabel from '@mui/material/FormLabel';
 
 import useStyles from './styles'
 import {FormProvider} from "react-hook-form";
+import Footer from "../../home/footer/Footer";
 
 
 const Login = () => {
@@ -18,6 +19,7 @@ const Login = () => {
     const classes = useStyles();
 
     return (
+        <div>
         <Grid container align={"center"}>
             <Grid item xs={12} >
                 <FormProvider >
@@ -61,6 +63,10 @@ const Login = () => {
                 </FormProvider>
             </Grid>
         </Grid>
+            <div className={classes.footer}>
+        <Footer />
+            </div>
+        </div>
     );
 }
 

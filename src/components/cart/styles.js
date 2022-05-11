@@ -22,8 +22,18 @@ export default makeStyles((theme) => ({
     },
     cardDetails: {
         display: 'flex',
-        marginTop: '10%',
+        marginTop: '5%',
         width: '100%',
         justifyContent: 'space-between',
     },
+    container: {
+        display: 'flex',
+        minHeight: '100vh',
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+        marginBottom: '2%'
+    },
+    footer: {
+        marginTop: 'auto'
+    }
 }));

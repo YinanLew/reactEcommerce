@@ -6,6 +6,7 @@ import {addToCart} from '../../../redux/actions/cart';
 import Products from "./items/Products";
 
 import './styles.css';
+import Footer from "../../home/footer/Footer";
 
 class ProductsList extends Component {
 
@@ -34,6 +35,7 @@ class ProductsList extends Component {
         const total = Math.ceil(product.length / postsPerPage)
 
         return (
+            <div>
             <main className={"content"}>
                 <Grid container justify={"center"} spacing={4}>
                     {
@@ -48,6 +50,10 @@ class ProductsList extends Component {
                 </Grid>
                 <Pagination className={"pagination"} onClick={this.toTop} onChange={(event,value) => this.paginate(value)} count={total}  showFirstButton={true} showLastButton={true}/>
             </main>
+                <div style={{marginTop: '30px'}}>
+                <Footer />
+                </div>
+            </div>
         );
     }
 }
