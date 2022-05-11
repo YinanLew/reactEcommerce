@@ -38,8 +38,6 @@ const Footer = () => {
                         <br/>
                         <div><NavLink to={"/demo"} style={{textDecoration: 'none', color: '#000000'}}>FAQs</NavLink></div>
                         <br/>
-                        <div><NavLink to={"/demo"} style={{textDecoration: 'none', color: '#000000'}}>Contact Us</NavLink></div>
-                        <br/>
                         <div><NavLink to={"/demo"} style={{textDecoration: 'none', color: '#000000'}}>Privacy Policy</NavLink></div>
                         <br/>
                         <div><NavLink to={"/demo"} style={{textDecoration: 'none', color: '#000000'}}>Terms & Conditions</NavLink></div>
