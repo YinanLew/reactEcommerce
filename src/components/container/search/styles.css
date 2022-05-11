@@ -1,0 +1,18 @@
+#inp {
+    height: 25px;
+    width: 300px;
+}
+
+@media screen and (max-width: 700px) {
+    #inp {
+        height: 25px;
+        width: 60px;
+    }
+}
+
+/*@media screen and (min-width: 1300px) {*/
+/*    #inp {*/
+/*        height: 25px;*/
+/*        width: 300px;*/
+/*    }*/
+/*}*/
