@@ -76,6 +76,7 @@ class App extends Component {
         try {
             await axios.get(`https://api.unsplash.com/search/photos?per_page=28&query=${this.state.data}&client_id=P4k3jwgqxt4aQihFFeJ8Oj8fEGOIQ6LPZnUVqD_Y-HE`)
                 .then((response) => {
+                    console.log(response)
                         const product = response.data.results;
                         this.props.searchAction(product);
                     }

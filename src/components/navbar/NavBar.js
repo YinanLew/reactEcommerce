@@ -107,7 +107,9 @@ const NavBar = ({category, cartNum, openCart}) => {
                         <Search />
                         </div>
                         <NavLink to={"/login"} className={classes.login}>
-                            <LoginSharpIcon color={"secondary"}/>
+                            <IconButton color={"secondary"}>
+                                <LoginSharpIcon color={"secondary"}/>
+                            </IconButton>
                         </NavLink>
                         <div className={classes.grow} />
                         <div className={classes.button}>
