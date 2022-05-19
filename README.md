@@ -1,3 +1,13 @@
+#React E-commerce App
+
+Developing website layout, application and functions layout.
+
+Fetching third-party APIs mocking products data.
+
+Designing graphical content with GSAP and Material UI for Product illustration and Shopping cart.
+
+Client account and Order management system.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
